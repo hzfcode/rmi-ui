@@ -1,0 +1,114 @@
+.viewer-fade-enter-active {
+    -webkit-animation: viewer-fade-in .3s;
+    animation: viewer-fade-in .3s
+  }
+  
+  .viewer-fade-leave-active {
+    -webkit-animation: viewer-fade-out .3s;
+    animation: viewer-fade-out .3s
+  }
+  
+  @-webkit-keyframes viewer-fade-in {
+    0% {
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+      opacity: 0
+    }
+  
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1
+    }
+  }
+  
+  @keyframes viewer-fade-in {
+    0% {
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+      opacity: 0
+    }
+  
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1
+    }
+  }
+  
+  @-webkit-keyframes viewer-fade-out {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1
+    }
+  
+    100% {
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+      opacity: 0
+    }
+  }
+  
+  @keyframes viewer-fade-out {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1
+    }
+  
+    100% {
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+      opacity: 0
+    }
+  }
+.hover-fade-enter-active {
+    -webkit-animation: hover-fade-in .3s;
+    animation: hover-fade-in .3s
+  }
+  
+  .hover-fade-leave-active {
+    -webkit-animation: hover-fade-out .3s;
+    animation: hover-fade-out .3s
+  }
+  
+  @-webkit-keyframes hover-fade-in {
+    0% {
+      opacity: 0
+    }
+  
+    100% {
+      opacity: 1
+    }
+  }
+  
+  @keyframes hover-fade-in {
+    0% {
+      opacity: 0
+    }
+  
+    100% {
+      opacity: 1
+    }
+  }
+  
+  @-webkit-keyframes hover-fade-out {
+    0% {
+      opacity: 1
+    }
+  
+    100% {
+      opacity: 0
+    }
+  }
+  
+  @keyframes hover-fade-out {
+    0% {
+      opacity: 1
+    }
+  
+    100% {
+      opacity: 0
+    }
+  }

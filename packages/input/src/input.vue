@@ -1,32 +1,75 @@
 <template>
-  <div class="xr-test" @click="handleClick">{{ num }}</div>
+  <div class="bs-input">
+    <input
+      :type="showPassword?(passwordVisible?'text':'password'):type"
+      class="bs-input-inner"
+      :class="[types?types:'',inputClass]"
+      :placeholder="placeholder"
+      :value="value"
+      :readonly="readonly"
+      v-bind="$attrs"
+      @input="$emit('input', $event.target.value)"
+      @change="$emit('change', $event.target.value)"
+      @blur="$emit('blur', $event.target.value)"
+      @focus="$emit('focus', $event.target.value)"
+      @click="$emit('click')"
+    />
+    <!-- 后置内容 -->
+    <i v-if="suffixIcon" class="bs-input-suffix" >
+      <i v-if="showPassword" class="bs-input-suffix-inner" :class="[suffixIcon]" @click="handlePasswordVisible"></i>
+      <i v-if="!showPassword" class="bs-input-suffix-inner" :class="[isReverseIcon?'is_reverse':'',suffixIcon]"></i>
+    </i>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'XrInput', // 这个名字很重要，它就是未来的标签名<xr-test></xr-test>，坑了我一下
-  data() {
-    return {
-      num: 2,
+  name: "BsInput",
+  components: {},
+  // model:{
+  //   event:'input',
+  //   value:'value',
+  // },
+  props: {
+    value: [String, Number],
+    placeholder: {
+      type: String,
+      default: ""
+    },
+    suffixIcon: {
+      type: String,
+      default: ""
+    },
+    readonly:Boolean,
+    inputClass:String,
+    types:String,
+    type:{
+      type:String,
+      default:'text'
+    },
+    isReverseIcon:Boolean,
+    showPassword:{
+      type:Boolean,
+      default:false,
     }
   },
-  methods: {
-    handleClick() {
-      this.num = this.num * this.num
-    },
+  data() {
+    return {
+      passwordVisible: false
+    };
   },
-}
+  watch: {},
+  computed: {},
+  methods: {
+    handlePasswordVisible(){
+      console.log(1)
+      this.passwordVisible=!this.passwordVisible
+    }
+  },
+  created() {},
+  mounted() {}
+};
 </script>
-
 <style lang="less" scoped>
-.xr-test {
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  border-radius: 50%;
-  font-size: 30px;
-  text-align: center;
-  background: #24292e;
-  color: white;
-}
+@import "./index.less";
 </style>

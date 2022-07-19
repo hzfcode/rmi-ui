@@ -1,0 +1,33 @@
+.bs-select {
+    position: relative;
+    .bs-select-menu {
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: 36px;
+        box-sizing: border-box;
+        width: 100%;
+        background: #fff;
+        overflow: auto;
+        max-height: 257px;
+        border-bottom: 1px solid #E6EBF0;
+        li {
+            box-sizing: border-box;
+            padding: 0 16px;
+            height: 32px;
+            line-height: 32px;
+            // border-bottom: 1px solid rgba(138,145,153,.3);
+            color: #5C6166;
+            cursor: pointer;
+            border-left: 1px solid #E6EBF0;
+            border-right: 1px solid #E6EBF0;
+            &:hover {
+                background: #0192F3;
+                color: #fff;
+                border-left: 1px solid #0192F3;
+                border-right: 1px solid #0192F3;
+            }
+        }
+    }
+}
+

@@ -1,6 +1,7 @@
-// 为组件提供 install 方法，供组件对外按需引入
-import XrInput from './src/input'
-XrInput.install = Vue => {
-  Vue.component(XrInput.name, XrInput)
+import BsInput from "./src/input.vue"
+
+BsInput.install = function (Vue) {
+    Vue.component(BsInput.name, BsInput)
 }
-export default XrInput
+
+export default BsInput

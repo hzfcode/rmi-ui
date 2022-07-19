@@ -1,0 +1,46 @@
+.bs-pager-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    .bs-pager {
+        display: inline-block;
+        margin: 0 20px;
+        line-height: 24px;
+        height: 24px;
+
+        li {
+            box-sizing: border-box;
+            min-width: 24px;
+            margin: 0 4px;
+            display: inline-block;
+            font-size: 16px;
+            color: #5C6166;
+            line-height: 24px;
+            height: 24px;
+            text-align: center;
+            cursor: pointer;
+
+            &.active {
+                background-color: #0192F3;
+                color: #fff;
+            }
+
+            &:hover {
+                background-color: #0192F3;
+                color: #fff;
+            }
+
+            &.more {
+                background-color: rgba(255,255,255,0);
+            }
+        }
+    }
+
+    .bs-pagecount {
+        color: #8A9199;
+        font-size: 14px;
+        line-height: 14px;
+        margin-left: 16px;
+    }
+}

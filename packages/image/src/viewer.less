@@ -1,0 +1,55 @@
+.bs-image-viewer__wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+
+  .bs-image-viewer__mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .5);
+  }
+
+  .bs-image-close {
+    position: absolute;
+    right: 80px;
+    top: 80px;
+    cursor: pointer;
+    z-index: 4;
+  }
+
+  .bs-image-viewer__actions {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 136px;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+  }
+
+  .el-image-viewer__canvas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+    img {
+      transform: scale(1) rotate(0deg);
+      margin-left: 0px;
+      margin-top: 0px;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+

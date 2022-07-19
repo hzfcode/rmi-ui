@@ -1,0 +1,66 @@
+.bs-modal-wrapper {
+    z-index: 1050;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+
+    .bs-modal-backdrop {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #272c36;
+        opacity: .3;
+    }
+
+    .bs-modal {
+        z-index: 1050;
+        position: relative;
+        opacity: 1;
+        overflow: hidden;
+        width: 50%;
+        margin: 15vh auto 0;
+        border-radius: 16px;
+        background: #fff;
+
+        .bs-modal-header {
+            padding: 16px 16px 8px;
+            line-height: 16px;
+            height: 16px;
+
+            .bs-model-close {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                cursor: pointer;
+            }
+        }
+
+        .bs-modal-content {
+            padding: 0 32px 16px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+            color: #5C6166;
+            text-align: center;
+        }
+
+        .bs-modal-footer {
+            // width: 100%;
+        }
+    }
+}
+
+.bs-modal-enter-active,
+.bs-leave-active {
+    transition: opacity .5s;
+}
+
+.bs-modal-enter,
+.bs-modal-to {
+    opacity: 0;
+}

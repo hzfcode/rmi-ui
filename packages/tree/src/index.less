@@ -1,0 +1,16 @@
+.tree-ul,
+.tree-li {
+  list-style: none;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.tree-expand {
+  .bs-tree-suffix-inner {
+    transition: transform 0.3s;
+    transform: rotate(-90deg);
+  }
+  .is_reverse {
+    transform: rotate(0deg);
+  }
+}
