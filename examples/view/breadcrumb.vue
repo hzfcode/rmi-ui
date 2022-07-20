@@ -1,5 +1,8 @@
 <template>
-  <div>breadcrumb介绍</div>
+  <div class="breadcrumb">
+    <div class="title">breadcrumb介绍</div>
+    <div></div>
+  </div>
 </template>
 
 <script>
@@ -8,4 +11,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="less" scoped>
+.title {
+  font-size: 24px;
+}
+</style>

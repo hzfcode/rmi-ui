@@ -39,6 +39,42 @@ export default {
           id: '2',
           val: 'button',
         },
+        {
+          id: '3',
+          val: 'dialog',
+        },
+        {
+          id: '4',
+          val: 'image',
+        },
+        {
+          id: '5',
+          val: 'input',
+        },
+        {
+          id: '6',
+          val: 'loading',
+        },
+        {
+          id: '7',
+          val: 'message',
+        },
+        {
+          id: '8',
+          val: 'pagination',
+        },
+        {
+          id: '9',
+          val: 'select',
+        },
+        {
+          id: '10',
+          val: 'title',
+        },
+        {
+          id: '11',
+          val: 'tree',
+        },
       ],
     }
   },

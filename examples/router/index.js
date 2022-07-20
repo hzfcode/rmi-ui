@@ -10,11 +10,54 @@ const routes = [
     children: [
       {
         path: 'breadcrumb',
-        component: () => import('../view/breadcrumb'),
+        component: () =>
+          import(/* webpackChunkName: "page" */ '../view/breadcrumb'),
       },
       {
         path: 'button',
-        component: () => import('../view/button'),
+        component: () =>
+          import(/* webpackChunkName: "page" */ '../view/button'),
+      },
+      {
+        path: 'dialog',
+        component: () =>
+          import(/* webpackChunkName: "page" */ '../view/dialog'),
+      },
+      {
+        path: 'image',
+        component: () => import(/* webpackChunkName: "page" */ '../view/image'),
+      },
+      {
+        path: 'input',
+        component: () => import(/* webpackChunkName: "page" */ '../view/input'),
+      },
+      {
+        path: 'loading',
+        component: () =>
+          import(/* webpackChunkName: "page" */ '../view/loading'),
+      },
+      {
+        path: 'message',
+        component: () =>
+          import(/* webpackChunkName: "page" */ '../view/message'),
+      },
+      {
+        path: 'pagination',
+        component: () =>
+          import(/* webpackChunkName: "page" */ '../view/pagination'),
+      },
+      {
+        path: 'select',
+        component: () =>
+          import(/* webpackChunkName: "page" */ '../view/select'),
+      },
+      {
+        path: 'title',
+        component: () => import(/* webpackChunkName: "page" */ '../view/title'),
+      },
+      {
+        path: 'tree',
+        component: () => import(/* webpackChunkName: "page" */ '../view/tree'),
       },
     ],
   },
