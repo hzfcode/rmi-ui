@@ -1,7 +1,16 @@
 <template>
   <div class="breadcrumb">
-    <div class="title">breadcrumb介绍</div>
+    <h2>breadcrumb面包屑</h2>
+    <p>显示当前页面的路径，快速返回之前的任意页面。</p>
+    <h3>基础用法</h3>
     <div></div>
+    <div class="code-box" v-highlight>
+      <pre>
+        <code class="language-html"> 
+          
+        </code>
+        </pre>
+    </div>
   </div>
 </template>
 
@@ -11,8 +20,4 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
-.title {
-  font-size: 24px;
-}
-</style>
+<style lang="less" scoped></style>
