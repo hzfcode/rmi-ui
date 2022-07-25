@@ -1,7 +1,7 @@
 <template>
   <div v-if="isShowLoading" class="loading-container">
     <div class="loading-box">
-      <img class="loading-img" src="../../assets/image/icon/loading.png" />
+      <img class="loading-img" src="../../../assets/image/icon/loading.png" />
       <!-- 这里content为双花括号 -->
       <span class="loading-txt">{{ content }}</span>
     </div>

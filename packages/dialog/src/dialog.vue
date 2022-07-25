@@ -4,11 +4,8 @@
       <div class="bs-modal-backdrop" @click="closeModal"></div>
       <div class="bs-modal" :style="style">
         <div class="bs-modal-header">
-          {{ title
-          }}<i
-            class="bs-icon-close-gray bs-model-close"
-            @click="closeModal"
-          ></i>
+          {{ title }}
+          <i class="bs-icon-close-gray bs-model-close" @click="closeModal"></i>
         </div>
         <div class="bs-modal-content">
           <slot></slot>
@@ -23,47 +20,47 @@
 
 <script>
 export default {
-  name: "BsDialog",
+  name: 'BsDialog',
   components: {},
   props: {
     title: {
       type: String,
-      default: ""
+      default: '',
     },
     visible: {
       type: Boolean,
-      default: false
+      default: false,
     },
     width: String,
     top: {
       type: String,
-      default: "15vh"
-    }
+      default: '15vh',
+    },
   },
   data() {
-    return {};
+    return {}
   },
   watch: {},
   computed: {
     style() {
-      let style = {};
-      style.margintop = this.top;
+      let style = {}
+      style.margintop = this.top
       if (this.width) {
-        style.width = this.width;
+        style.width = this.width
       }
-      return style;
-    }
+      return style
+    },
   },
   methods: {
     closeModal() {
-      this.$emit("update:visible", false);
-      this.$emit("close");
-    }
+      this.$emit('update:visible', false)
+      this.$emit('close')
+    },
   },
   created() {},
-  mounted() {}
-};
+  mounted() {},
+}
 </script>
 <style lang="less" scoped>
-@import "./index.less";
+@import './index.less';
 </style>

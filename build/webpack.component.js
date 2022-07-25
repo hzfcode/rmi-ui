@@ -35,7 +35,7 @@ module.exports = {
       filename: 'style/[name].css', //在lib文件夹中建立style文件夹中，生成对应的css文件。
     },
   },
-  outputDir: path.resolve(__dirname, '..', 'lib'),
+  outputDir: path.resolve(__dirname, '../', 'lib'),
   productionSourceMap: false,
   // 扩展 webpack 配置
   chainWebpack: config => {

@@ -40,7 +40,6 @@ export default {
   },
   created() {},
   mounted() {
-    console.log(this.bsBreadcrumb.separatorClass)
     this.separator = this.bsBreadcrumb.separator
     this.separatorClass = this.bsBreadcrumb.separatorClass
   },
