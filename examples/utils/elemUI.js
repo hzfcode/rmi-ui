@@ -11,6 +11,7 @@ import {
   Submenu,
   MenuItem,
   MenuItemGroup,
+  Divider,
 } from 'element-ui'
 
 Vue.use(Button)
@@ -24,3 +25,4 @@ Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItem)
 Vue.use(MenuItemGroup)
+Vue.use(Divider)

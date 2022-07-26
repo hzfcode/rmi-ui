@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <el-container>
-      <el-header class="container">RMI_UI组件库介绍</el-header>
-      <el-container>
+    <el-container class="container">
+      <el-header>RMI_UI组件库介绍</el-header>
+      <el-container class="container">
         <el-aside width="200px">
           <el-menu default-active="1" class="el-menu-vertical-demo">
             <el-menu-item
@@ -85,6 +85,7 @@ export default {
 <style lang="less" scoped>
 .el-container {
   height: 100%;
+  position: fixed;
 }
 .el-header {
   font-size: 32px;
@@ -99,9 +100,15 @@ export default {
   color: #333;
   text-align: center;
   line-height: 200px;
+  position: fixed;
+  height: 100vh;
+  overflow-x: auto;
+  margin-top: 60px;
 }
 
 .el-main {
   color: #333;
+  margin-left: 200px;
+  margin-top: 60px;
 }
 </style>
