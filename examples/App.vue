@@ -11,6 +11,4 @@ export default {
 }
 </script>
 
-<style lang="less">
-@import './less/index';
-</style>
+<style lang="less"></style>
